@@ -1,0 +1,227 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+	font-size: 62.5%;
+}
+
+ .container {
+	margin: auto 40px;
+	font-size: 2rem;
+}
+
+ h1 {
+	font-size: 6rem;
+}
+
+ h1 {
+	margin: 40px 0;
+}
+h2,h3,h4 {
+ margin: 20px 0;
+}
+
+header {
+	margin: 20px 0 10px 10px;
+}
+
+a, button {
+	cursor: pointer;
+}
+
+nav a {
+	font-size: 1.5rem;
+	padding-right: 20px;
+}
+
+.main-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.side {
+  width: 645px;
+  height: 545px;
+  color: white;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.big {
+	background-image: url("../images/bike1.jpg");
+	background-repeat: no-repeat;
+	padding: 50px;
+	justify-content: flex-end;
+}
+
+.med {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.box-1 {
+	background-image: url("../images/bike2.jpg");
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 425px;
+  height: 340px;
+	color: white;
+	padding: 20px;
+}
+
+.box-2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 200px;
+  height: 340px;
+	background: #fdaa5b;
+	color: white;
+	padding: 20px;
+}
+
+.small {
+	background: #e4decc;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 646px;
+  height: 185px;
+	color: white;
+	padding: 20px;
+}
+
+button {
+	background-color: black;
+	color: white;
+	font-size: 2rem;
+	padding: 2rem;
+	border: none;
+}
+
+@media(max-width: 500px) {
+  .container {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .main-content {
+    width: 100%;
+    padding-right: 10px;
+    color: white;
+  	flex-direction: column;
+  	justify-content: space-between;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .side {
+    height: auto;
+    width: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .med {
+    width: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .box-1 {
+    width: inherit;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  .box-2 {
+    width: inherit;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .small {
+    height: auto;
+    width: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .container header nav {
+    width: 100%;
+  }
+
+  .container header nav a {
+    font-size: 20px;
+    color: white;
+    background: #fdaa5b;
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20px 5%;
+  }
+
+  .container header nav a:hover {
+    background: #e4decc;
+    color: black;
+  }
+
+  .container header {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
